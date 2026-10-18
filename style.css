@@ -1,0 +1,32 @@
+:root{
+  --bg:#0b1221;
+  --panel:#0f1724;
+  --accent:#ffd166;
+  --muted:#9aa7c7;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Hiragino Kaku Gothic ProN","游ゴシック体",sans-serif;
+  background:linear-gradient(180deg,var(--bg),#071027 120%);
+  color:#e6eef8;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  padding:18px;
+}
+header{width:100%;max-width:980px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+h1{font-size:18px;margin:0}
+.hud{display:flex;gap:12px;align-items:center;font-weight:600;color:var(--muted)}
+.controls{display:flex;gap:8px}
+button{background:var(--panel);color:inherit;border:1px solid rgba(255,255,255,0.06);padding:6px 10px;border-radius:6px;cursor:pointer}
+main{width:100%;max-width:980px;display:flex;flex-direction:column;align-items:center;gap:10px}
+canvas{background:linear-gradient(180deg,#061127,#07213a);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.6);width:100%;height:auto;max-height:75vh}
+.hint{margin:0;color:var(--muted);font-size:13px}
+footer{color:var(--muted);font-size:12px}
+@media (max-width:700px){
+  header{flex-direction:column;align-items:flex-start}
+  .hud{flex-wrap:wrap}
+}

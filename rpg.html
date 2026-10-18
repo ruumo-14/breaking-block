@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RPG Battle Demo</title>
+  <link rel="stylesheet" href="rpg.css" />
+</head>
+<body>
+  <header>
+    <div class="title-group">
+      <h1>RPG Battle Demo</h1>
+      <div class="subtitle">Undertale風・回避戦</div>
+    </div>
+    <div class="top-actions">
+      <button id="startBtn">Start Battle</button>
+      <a href="index.html" class="link-btn">Breakout</a>
+    </div>
+  </header>
+
+  <main class="game-shell">
+    <div class="status-panel">
+      <div class="status-item">
+        <span class="label">HP</span>
+        <strong id="hp">10</strong>
+      </div>
+      <div class="status-item">
+        <span class="label">Mode</span>
+        <strong id="mode">Ready</strong>
+      </div>
+    </div>
+
+    <div class="canvas-wrap">
+      <canvas id="game" width="160" height="120"></canvas>
+    </div>
+
+    <p class="hint">矢印キー / WASD で移動。タッチやマウスでも操作できます。スペースで開始。</p>
+  </main>
+
+  <script src="rpg.js"></script>
+</body>
+</html>
